@@ -1,0 +1,77 @@
+/* Header Styles */
+.header {
+    background-color: #212121; /* Dark background for header */
+    color: #fff; /* White text color */
+    padding: 10px 37px; /* Adjusted padding for a balanced look */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+a {
+    color: #fff; /* Default link color */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+nav {
+    display: flex; /* Flexbox for nav layout */
+    align-items: center; /* Center items vertically */
+    flex-grow: 1; /* Allow nav to take available space */
+}
+
+nav a {
+    color: #fff; /* White color for nav links */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Padding for links */
+    transition: background-color 0.3s ease; /* Transition for background color */
+    border-radius: 5px; /* Rounded corners for links */
+}
+
+nav a:hover:not(.logo) {
+    background-color: #555; /* Darker background on hover */
+}
+
+.logo {
+    display: flex; /* Flexbox for logo alignment */
+    align-items: center; /* Center logo vertically */
+    padding: 0; /* Remove padding */
+}
+
+.logo img {
+    width: 200px; /* Set logo width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.dashboard-links {
+    margin-left: 15px; /* Space between dashboard links */
+}
+
+.auth-links {
+    margin-left: auto; /* Push auth links to the right */
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center auth links vertically */
+}
+
+.auth-links a {
+    background-color: #dc3545; /* Red background for auth links */
+    border-radius: 5px; /* Rounded corners */
+    padding: 8px 16px; /* Padding for buttons */
+    margin-left: 12px; /* Space between buttons */
+    transition: background-color 0.3s ease; /* Transition for background color */
+}
+
+.auth-links a:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+.add-property {
+    background-color: #007bff; /* Blue background for add property button */
+    border-radius: 5px; /* Rounded corners */
+    padding: 8px 16px; /* Padding for button */
+    margin-left: 19px; /* Space from previous items */
+    transition: background-color 0.3s ease; /* Transition for background color */
+}
+
+.add-property:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

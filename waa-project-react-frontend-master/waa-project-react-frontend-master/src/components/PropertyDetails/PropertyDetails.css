@@ -1,0 +1,36 @@
+.property-details-content {
+    padding-left: 37px;
+    height: 100%;
+
+    .property-details {
+        img {
+            border: 1px solid #ccc;
+            box-shadow: black 0px 0px 4px;
+            border-radius: 5px; /* Optional: add some rounded corners */
+        }
+
+        .pictures {
+            display: flex; /* Use flexbox for better alignment */
+            justify-content: flex-start; /* Align images to the left */
+            margin-top: 15px; /* Add some space above the pictures */
+
+            .thumbnail {
+                height: 100px;
+                width: 100px; /* Fixed width for better alignment */
+                margin-right: 8px; /* Reduced margin for less separation */
+            }
+
+            .thumbnail:last-child {
+                margin-right: 0; /* Remove margin on the last image */
+            }
+        }
+    }
+
+    .offerForm {
+        height: 100%;
+        width: 350px;
+        background: #f2f2f2;
+        padding: 3px 23px 53px;
+        border-radius: 5px; /* Optional: add rounded corners to form */
+    }
+}

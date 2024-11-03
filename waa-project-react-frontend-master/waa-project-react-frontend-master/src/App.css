@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+html, body, #root {
+    height: 100%;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.form {
+    max-width: 400px; /* Adjust the maximum width as needed */
+
+    .form-group {
+        margin-bottom: 20px; /* Adjust the margin between form groups */
+
+        label {
+            display: block;
+            margin-bottom: 5px; /* Adjust the margin below labels */
+            color: #333;
+        }
+
+        textarea,
+        input[type="number"],
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            color: #333;
+            font-size: 16px;
+            outline: none; /* Remove default focus outline */
+
+            option {
+                background-color: #fff;
+                color: #333;
+            }
+
+            &::-ms-expand {
+                display: none;
+            }
+        }
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff; /* Adjust the button color */
+        color: #fff;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #5b5b5b; /* Adjust the hover color */
+        }
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+
+    th, td {
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+        color: #333;
+    }
+
+    tbody tr:hover {
+        background-color: #f9f9f9;
+    }
+
+    button, a {
+        padding: 6px 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-right: 5px;
+        font-size: 14px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    button {
+        background-color: #007bff;
+    }
+
+    button:hover {
+        background-color: #555;
+    }
+
+    a {
+        background-color: #28a745;
+    }
+
+    a:hover {
+        background-color: #555;
+    }
+}
+
+.login-form, .register-form {
+    margin-top: 44px;
+}
+
+.edit-property-content, .edit-offer-content,
+.owner-dashboard-content, .admin-dashboard-content, .customer-dashboard-content {
+    padding: 16px;
+}

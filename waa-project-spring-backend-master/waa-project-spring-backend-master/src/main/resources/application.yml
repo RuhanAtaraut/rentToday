@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: Property Management System
+  datasource:
+    username: root
+    password: Ruhan@123
+    url: jdbc:mysql://localhost:3306/real2  # Updated for MySQL
+    driver-class-name: com.mysql.cj.jdbc.Driver  # Added for MySQL
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect  # Updated for MySQL
+        format_sql: false
+    show-sql: true
+    defer-datasource-initialization: true
+    generate-ddl: true
+  sql:
+    init:
+      mode: always
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: '1virtualbroker@gmail.com'
+    password: 'ztvvgvqokxvwrflg'
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  email:
+    sender: 1virtualbroker@gmail.com
+server:
+  port: 8080
